@@ -1,0 +1,106 @@
+body {
+  background-color: #05284c;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500; /* if you want the light version */
+  line-height: 1.5;
+  margin: 0;
+}
+
+.container {
+  width: 600px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos dentro se apilen verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  text-align: center;
+  background-color: #fefae0;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  padding: 30px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #1c5987;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  color:#1c5987;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+
+img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.btn_rojo {
+  background-color: red;
+  border: none;
+  width: 120px;
+  height: 50px;
+  padding: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_rojo:hover {
+  background-color: rgb(255, 255, 255); /* Cambia a un rojo más oscuro al pasar el mouse */
+  text-decoration: none; /* Eliminar subrayado al pasar el mouse */
+}
+
+.btn_rojo a {
+  color: white; /* Color del texto del enlace dentro del botón */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+}
+
+.btn_rojo:hover a {
+  color: red; /* Cambia el texto a negro al pasar el cursor */
+}
+
+.icono {
+  font-size: 24px;
+  color: #1c5987;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
