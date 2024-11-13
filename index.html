@@ -1,53 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="container">
-    <div class="card presentation">
-      <h1>
-        Hola! Soy Klisman 😎
-      </h1>
-      <img src="images/perfil.png" alt="porfile imagen">
-      <p>
-        Soy un apasionado de la tecnología 💻 y actualmente estoy estudiando en Le Wagon,
-        una bootcamp de programación de renombre 🌍. Estoy emocionado por esta nueva etapa 🚀,
-        listo para enfrentar los desafíos y enfocado en convertirme en un Full Stack Developer 🔧👨‍💻.
-      </p>
-      <button class="btn_rojo">
-        <a href="https://www.lewagon.com/es" target="_blank">Le Wagon</a>
-      </button>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container d-flex justify-content-between align-items-center mb-2 mt-2">
+
+        <div class="d-flex align-items-center">
+            <a href="index.html" class="navbar-brand text-white d-flex align-items-center fs-4">
+                <img src="images/perfilicono.png" alt="Foto de Klisman" class="rounded-circle me-2 border-white border" style="width: 50px; height: 50px;">
+                Klisman Evangelista
+            </a>
+        </div>
+
+        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mx-auto fs-5">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#about">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#projects">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#skills">Habilidades</a>
+                </li>
+            </ul>
+
+            <div class="d-lg-flex align-items-center mt-3 mt-lg-0">
+              <a href="https://github.com/KlismanEvangelista" target="_blank" class="text-white me-2"><i class="fab fa-github fa-lg"></i></a>
+              <a href="https://www.linkedin.com/in/klisman-yeltsin-evangelista-fabian-87447a231/" target="_blank" class="text-white me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="mailto:klismanevangelista777@gmail.com" class="text-white me-3"><i class="fas fa-envelope fa-lg"></i></a>
+              <a href="documents/cv.pdf" download class="btn btn-download">
+                <i class="fas fa-download"></i> Descargar CV
+              </a>
+            </div>
+        </div>
     </div>
-    <div class="card presentation">
-      <h2>Sigueme:</h2>
-      <ul class="list-inline">
-        <li>
-          <a href="">
-            <i class="fa-brands fa-linkedin icono"></i>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <i class="fa-brands fa-facebook icono"></i>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <i class="fa-brands fa-instagram icono"></i>
-          </a>
-        </li>
-      </ul>
+  </nav>
+
+    <header class="sectioncolor pt-3">
+      <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
+
+        <div class="text-center text-lg-start mb-4 mb-lg-0">
+          <h1 class="display-4 my-4 my-lg-0">¡Hola! Soy Klisman, un Ingeniero de Sistemas</h1>
+          <p class="lead">Transformo ideas en soluciones digitales impactantes, creando páginas web innovadoras que cautivan y mejoran la experiencia del usuario.</p>
+        </div>
+
+        <div class="ms-0 ms-lg-3">
+          <img src="images/perfilsinfondo1.png" alt="Foto de Klisman" class="img-fluid" style="max-width: 100%; height: auto; width: 100%; max-width: 1060px;">
+        </div>
+      </div>
+    </header>
+
+    <div id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-md-6 col-12 text-center mb-md-0 order-md-1 order-2 me-6">
+            <img src="images/sobremi1.png" class="img-fluid" style="max-width: 100%; height: auto; width: 100%; max-width: 1000px;">
+          </div>
+
+          <div class="col-md-6 col-12 ps-md-6 order-md-2 order-1 mb-4">
+            <div class="ms-3 me-3">
+              <h2 class="mb-lg-5 mb-4 text-center">Sobre Mí</h2>
+              <p class="text">
+                Soy un ingeniero de sistemas con una gran pasión por el desarrollo web. Me encanta crear soluciones digitales innovadoras que mejoren la experiencia de los usuarios. Siempre estoy en constante aprendizaje y busco llevar mis proyectos al siguiente nivel con creatividad y tecnología.
+              </p>
+              <p class="text">
+                Mi objetivo es transformar ideas en experiencias digitales impactantes, siempre buscando superar las expectativas de mis clientes.
+              </p>
+
+              <div class="mt-4">
+                <h4 class="mb-3">Contáctame</h4>
+                <p>
+                  <i class="fas fa-envelope icon-mail me-2"></i> klismanevangelista777@gmail.com
+                </p>
+                <a href="https://wa.me/1234567890" class="btn-whatsapp mt-md-3 my-2" target="_blank">
+                  <i class="fab fa-whatsapp fa-lg me-2"></i> Contáctame
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+
+
+    <section id="projects" class="py-5 sectioncolor">
+      <div class="container">
+          <h2 class="text-center mb-5">Proyectos</h2>
+          <div class="d-flex flex-wrap justify-content-center gap-4">
+
+              <div class="card">
+                  <video class="card-img-top" autoplay muted loop id="myVideo">
+                      <source src="videos/ticketx.mkv" type="video/mp4">
+                      Tu navegador no soporta videos.
+                  </video>
+                  <div class="card-body">
+                      <h5 class="card-title">Proyecto 1</h5>
+                      <p class="card-text">Explora cómo desarrollé esta aplicación interactiva que optimiza la experiencia del usuario.</p>
+                  </div>
+              </div>
+
+              <div class="card">
+                  <video class="card-img-top" autoplay muted loop id="myVideo">
+                      <source src="videos/tripmate.mkv" type="video/mp4">
+                      Tu navegador no soporta videos.
+                  </video>
+                  <div class="card-body">
+                      <h5 class="card-title">Proyecto 2</h5>
+                      <p class="card-text">Un vistazo a mi plataforma de comercio electrónico, creada para facilitar las compras online.</p>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-5">
+      <div class="container">
+          <h2 class="text-center mb-5">Habilidades</h2>
+          <div class="row justify-content-center">
+              <div class="d-flex justify-content-center flex-wrap align-items-center">
+
+                  <div class="skill-item text-center mx-3 my-3">
+                      <img src="/images/ruby.png" alt="Ruby" class="skill-icon mb-2">
+                      <h6>Ruby</h6>
+                      <p class="skill-text">Desarrollo rápido de aplicaciones.</p>
+                  </div>
+
+                  <div class="skill-item text-center mx-3 my-3">
+                      <img src="/images/rails.png" alt="Ruby on Rails" class="skill-icon mb-2">
+                      <h6>Ruby on Rails</h6>
+                      <p class="skill-text">Framework robusto para aplicaciones web.</p>
+                  </div>
+
+                  <div class="skill-item text-center mx-3 my-3">
+                      <i class="fab fa-js fa-4x mb-2 skill-icon" style="color: #f7df1e;"></i>
+                      <h6>JavaScript</h6>
+                      <p class="skill-text">Interactividad y dinamismo en la web.</p>
+                  </div>
+
+                  <div class="skill-item text-center mx-3 my-3">
+                      <i class="fab fa-react fa-4x mb-2 skill-icon" style="color: #61dafb;"></i>
+                      <h6>React</h6>
+                      <p class="skill-text">Interfaces dinámicas y eficientes.</p>
+                  </div>
+
+                  <div class="skill-item text-center mx-3 my-3">
+                      <i class="fab fa-html5 fa-4x mb-2 skill-icon" style="color: #e34c26;"></i>
+                      <h6>HTML</h6>
+                      <p class="skill-text">Estructura para páginas web.</p>
+                  </div>
+
+                  <div class="skill-item text-center mx-3 my-3">
+                      <i class="fab fa-css3-alt fa-4x mb-2 skill-icon" style="color: #264de4;"></i>
+                      <h6>CSS</h6>
+                      <p class="skill-text">Estilos y diseño visual.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <footer class="text-center py-4">
+        <p class="mb-0 text-white">© 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const video = document.getElementById("myVideo");
+      video.playbackRate = 2;
+    </script>
 </body>
+
 </html>
